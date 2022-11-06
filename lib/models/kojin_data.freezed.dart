@@ -20,16 +20,16 @@ KojinData _$KojinDataFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$KojinData {
-  int get id => throw _privateConstructorUsedError;
-  String get firstName => throw _privateConstructorUsedError;
-  String get lastName => throw _privateConstructorUsedError;
-  String get alias => throw _privateConstructorUsedError;
-  int get bornDate => throw _privateConstructorUsedError;
-  int get deathDate => throw _privateConstructorUsedError;
-  int get age => throw _privateConstructorUsedError;
-  String get country => throw _privateConstructorUsedError;
-  List<String> get jobs => throw _privateConstructorUsedError;
-  String get profile => throw _privateConstructorUsedError;
+// required int? id,
+  String? get firstName => throw _privateConstructorUsedError;
+  String? get lastName => throw _privateConstructorUsedError;
+  String? get alias =>
+      throw _privateConstructorUsedError; // required int? bornDate,
+// required int? deathDate,
+// required int? age,
+  String? get country => throw _privateConstructorUsedError;
+  List<String>? get jobs => throw _privateConstructorUsedError;
+  String? get profile => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -43,16 +43,12 @@ abstract class $KojinDataCopyWith<$Res> {
       _$KojinDataCopyWithImpl<$Res, KojinData>;
   @useResult
   $Res call(
-      {int id,
-      String firstName,
-      String lastName,
-      String alias,
-      int bornDate,
-      int deathDate,
-      int age,
-      String country,
-      List<String> jobs,
-      String profile});
+      {String? firstName,
+      String? lastName,
+      String? alias,
+      String? country,
+      List<String>? jobs,
+      String? profile});
 }
 
 /// @nodoc
@@ -68,58 +64,38 @@ class _$KojinDataCopyWithImpl<$Res, $Val extends KojinData>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
-    Object? firstName = null,
-    Object? lastName = null,
-    Object? alias = null,
-    Object? bornDate = null,
-    Object? deathDate = null,
-    Object? age = null,
-    Object? country = null,
-    Object? jobs = null,
-    Object? profile = null,
+    Object? firstName = freezed,
+    Object? lastName = freezed,
+    Object? alias = freezed,
+    Object? country = freezed,
+    Object? jobs = freezed,
+    Object? profile = freezed,
   }) {
     return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      firstName: null == firstName
+      firstName: freezed == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
-              as String,
-      lastName: null == lastName
+              as String?,
+      lastName: freezed == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
-              as String,
-      alias: null == alias
+              as String?,
+      alias: freezed == alias
           ? _value.alias
           : alias // ignore: cast_nullable_to_non_nullable
-              as String,
-      bornDate: null == bornDate
-          ? _value.bornDate
-          : bornDate // ignore: cast_nullable_to_non_nullable
-              as int,
-      deathDate: null == deathDate
-          ? _value.deathDate
-          : deathDate // ignore: cast_nullable_to_non_nullable
-              as int,
-      age: null == age
-          ? _value.age
-          : age // ignore: cast_nullable_to_non_nullable
-              as int,
-      country: null == country
+              as String?,
+      country: freezed == country
           ? _value.country
           : country // ignore: cast_nullable_to_non_nullable
-              as String,
-      jobs: null == jobs
+              as String?,
+      jobs: freezed == jobs
           ? _value.jobs
           : jobs // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-      profile: null == profile
+              as List<String>?,
+      profile: freezed == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ) as $Val);
   }
 }
@@ -132,16 +108,12 @@ abstract class _$$_KojinDataCopyWith<$Res> implements $KojinDataCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {int id,
-      String firstName,
-      String lastName,
-      String alias,
-      int bornDate,
-      int deathDate,
-      int age,
-      String country,
-      List<String> jobs,
-      String profile});
+      {String? firstName,
+      String? lastName,
+      String? alias,
+      String? country,
+      List<String>? jobs,
+      String? profile});
 }
 
 /// @nodoc
@@ -155,127 +127,84 @@ class __$$_KojinDataCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
-    Object? firstName = null,
-    Object? lastName = null,
-    Object? alias = null,
-    Object? bornDate = null,
-    Object? deathDate = null,
-    Object? age = null,
-    Object? country = null,
-    Object? jobs = null,
-    Object? profile = null,
+    Object? firstName = freezed,
+    Object? lastName = freezed,
+    Object? alias = freezed,
+    Object? country = freezed,
+    Object? jobs = freezed,
+    Object? profile = freezed,
   }) {
     return _then(_$_KojinData(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      firstName: null == firstName
+      firstName: freezed == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
-              as String,
-      lastName: null == lastName
+              as String?,
+      lastName: freezed == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
-              as String,
-      alias: null == alias
+              as String?,
+      alias: freezed == alias
           ? _value.alias
           : alias // ignore: cast_nullable_to_non_nullable
-              as String,
-      bornDate: null == bornDate
-          ? _value.bornDate
-          : bornDate // ignore: cast_nullable_to_non_nullable
-              as int,
-      deathDate: null == deathDate
-          ? _value.deathDate
-          : deathDate // ignore: cast_nullable_to_non_nullable
-              as int,
-      age: null == age
-          ? _value.age
-          : age // ignore: cast_nullable_to_non_nullable
-              as int,
-      country: null == country
+              as String?,
+      country: freezed == country
           ? _value.country
           : country // ignore: cast_nullable_to_non_nullable
-              as String,
-      jobs: null == jobs
+              as String?,
+      jobs: freezed == jobs
           ? _value._jobs
           : jobs // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-      profile: null == profile
+              as List<String>?,
+      profile: freezed == profile
           ? _value.profile
           : profile // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$_KojinData with DiagnosticableTreeMixin implements _KojinData {
+class _$_KojinData implements _KojinData {
   const _$_KojinData(
-      {required this.id,
-      required this.firstName,
+      {required this.firstName,
       required this.lastName,
       required this.alias,
-      required this.bornDate,
-      required this.deathDate,
-      required this.age,
       required this.country,
-      required final List<String> jobs,
+      required final List<String>? jobs,
       required this.profile})
       : _jobs = jobs;
 
   factory _$_KojinData.fromJson(Map<String, dynamic> json) =>
       _$$_KojinDataFromJson(json);
 
+// required int? id,
   @override
-  final int id;
+  final String? firstName;
   @override
-  final String firstName;
+  final String? lastName;
   @override
-  final String lastName;
+  final String? alias;
+// required int? bornDate,
+// required int? deathDate,
+// required int? age,
   @override
-  final String alias;
+  final String? country;
+  final List<String>? _jobs;
   @override
-  final int bornDate;
-  @override
-  final int deathDate;
-  @override
-  final int age;
-  @override
-  final String country;
-  final List<String> _jobs;
-  @override
-  List<String> get jobs {
+  List<String>? get jobs {
+    final value = _jobs;
+    if (value == null) return null;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_jobs);
+    return EqualUnmodifiableListView(value);
   }
 
   @override
-  final String profile;
+  final String? profile;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'KojinData(id: $id, firstName: $firstName, lastName: $lastName, alias: $alias, bornDate: $bornDate, deathDate: $deathDate, age: $age, country: $country, jobs: $jobs, profile: $profile)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'KojinData'))
-      ..add(DiagnosticsProperty('id', id))
-      ..add(DiagnosticsProperty('firstName', firstName))
-      ..add(DiagnosticsProperty('lastName', lastName))
-      ..add(DiagnosticsProperty('alias', alias))
-      ..add(DiagnosticsProperty('bornDate', bornDate))
-      ..add(DiagnosticsProperty('deathDate', deathDate))
-      ..add(DiagnosticsProperty('age', age))
-      ..add(DiagnosticsProperty('country', country))
-      ..add(DiagnosticsProperty('jobs', jobs))
-      ..add(DiagnosticsProperty('profile', profile));
+  String toString() {
+    return 'KojinData(firstName: $firstName, lastName: $lastName, alias: $alias, country: $country, jobs: $jobs, profile: $profile)';
   }
 
   @override
@@ -283,17 +212,11 @@ class _$_KojinData with DiagnosticableTreeMixin implements _KojinData {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_KojinData &&
-            (identical(other.id, id) || other.id == id) &&
             (identical(other.firstName, firstName) ||
                 other.firstName == firstName) &&
             (identical(other.lastName, lastName) ||
                 other.lastName == lastName) &&
             (identical(other.alias, alias) || other.alias == alias) &&
-            (identical(other.bornDate, bornDate) ||
-                other.bornDate == bornDate) &&
-            (identical(other.deathDate, deathDate) ||
-                other.deathDate == deathDate) &&
-            (identical(other.age, age) || other.age == age) &&
             (identical(other.country, country) || other.country == country) &&
             const DeepCollectionEquality().equals(other._jobs, _jobs) &&
             (identical(other.profile, profile) || other.profile == profile));
@@ -301,18 +224,8 @@ class _$_KojinData with DiagnosticableTreeMixin implements _KojinData {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      firstName,
-      lastName,
-      alias,
-      bornDate,
-      deathDate,
-      age,
-      country,
-      const DeepCollectionEquality().hash(_jobs),
-      profile);
+  int get hashCode => Object.hash(runtimeType, firstName, lastName, alias,
+      country, const DeepCollectionEquality().hash(_jobs), profile);
 
   @JsonKey(ignore: true)
   @override
@@ -330,40 +243,30 @@ class _$_KojinData with DiagnosticableTreeMixin implements _KojinData {
 
 abstract class _KojinData implements KojinData {
   const factory _KojinData(
-      {required final int id,
-      required final String firstName,
-      required final String lastName,
-      required final String alias,
-      required final int bornDate,
-      required final int deathDate,
-      required final int age,
-      required final String country,
-      required final List<String> jobs,
-      required final String profile}) = _$_KojinData;
+      {required final String? firstName,
+      required final String? lastName,
+      required final String? alias,
+      required final String? country,
+      required final List<String>? jobs,
+      required final String? profile}) = _$_KojinData;
 
   factory _KojinData.fromJson(Map<String, dynamic> json) =
       _$_KojinData.fromJson;
 
+  @override // required int? id,
+  String? get firstName;
   @override
-  int get id;
+  String? get lastName;
   @override
-  String get firstName;
+  String? get alias;
+  @override // required int? bornDate,
+// required int? deathDate,
+// required int? age,
+  String? get country;
   @override
-  String get lastName;
+  List<String>? get jobs;
   @override
-  String get alias;
-  @override
-  int get bornDate;
-  @override
-  int get deathDate;
-  @override
-  int get age;
-  @override
-  String get country;
-  @override
-  List<String> get jobs;
-  @override
-  String get profile;
+  String? get profile;
   @override
   @JsonKey(ignore: true)
   _$$_KojinDataCopyWith<_$_KojinData> get copyWith =>
