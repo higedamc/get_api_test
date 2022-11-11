@@ -16,7 +16,7 @@ import 'repository/test_repository.dart';
 final repositoryProvider = Provider((ref) => Repository());
 
 final listProvider = FutureProvider<List<KojinData>>((ref) async {
-  final repo = ref.watch(repositoryProvider);
+  final repo = ref.read(repositoryProvider);
   return await repo.fetchList();
 });
 
